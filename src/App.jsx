@@ -27,117 +27,16 @@ import {
 
 // Default initial data for immediate analytics preview
 const DEFAULT_TRADES = [
-  {
-    id: '1',
-    date: '2026-10-29T14:30',
-    pair: 'XAU/USD',
-    direction: 'Sell',
-    session: 'New York',
-    setup: 'Supply Zone Short',
-    entry: 4030.50,
-    sl: 4035.00,
-    tp: 4010.00,
-    rr: '1:4.5',
-    rMultiple: 4.5,
-    outcome: 'TP Hit',
-    chartUrl: 'https://www.tradingview.com/x/dummy1/',
-    notes: 'Perfect rejection at H1 Supply Zone (4024-4032). Waited for M15 bearish engulfing confirmation.',
-    pnlAmount: 4.5
-  },
-  {
-    id: '2',
-    date: '2026-10-27T09:15',
-    pair: 'XAU/USD',
-    direction: 'Buy',
-    session: 'London',
-    setup: 'Demand Zone Bounce',
-    entry: 3992.00,
-    sl: 3985.00,
-    tp: 4020.00,
-    rr: '1:4.0',
-    rMultiple: 4.0,
-    outcome: 'TP Hit',
-    chartUrl: 'https://www.tradingview.com/x/dummy2/',
-    notes: 'Price tapped strong demand zone (3988-3995) with long lower wick on 15m.',
-    pnlAmount: 4.0
-  },
-  {
-    id: '3',
-    date: '2026-10-26T18:30',
-    pair: 'USTEC',
-    direction: 'Buy',
-    session: 'New York',
-    setup: 'Breakout Re-test',
-    entry: 29210.0,
-    sl: 29170.0,
-    tp: 29330.0,
-    rr: '1:3.0',
-    rMultiple: -1.0,
-    outcome: 'SL Hit',
-    chartUrl: '',
-    notes: 'Chased price after initial spike (FOMO). Entered too late before deep pullback.',
-    pnlAmount: -1.0
-  },
-  {
-    id: '4',
-    date: '2026-10-24T10:00',
-    pair: 'XAU/USD',
-    direction: 'Sell',
-    session: 'London',
-    setup: 'Supply Zone Short',
-    entry: 4028.00,
-    sl: 4033.00,
-    tp: 4005.00,
-    rr: '1:4.6',
-    rMultiple: 4.6,
-    outcome: 'TP Hit',
-    chartUrl: '',
-    notes: 'Classic rejection at daily resistance line.',
-    pnlAmount: 4.6
-  },
-  {
-    id: '5',
-    date: '2026-10-23T15:45',
-    pair: 'USTEC',
-    direction: 'Sell',
-    session: 'New York',
-    setup: 'M15 Rejection',
-    entry: 29180.0,
-    sl: 29210.0,
-    tp: 29100.0,
-    rr: '1:2.6',
-    rMultiple: 0.0,
-    outcome: 'Break-Even',
-    chartUrl: '',
-    notes: 'Moved SL to entry after +1.5R. Got hit during market noise.',
-    pnlAmount: 0.0
-  },
-  {
-    id: '6',
-    date: '2026-10-22T08:30',
-    pair: 'XAU/USD',
-    direction: 'Buy',
-    session: 'Asian',
-    setup: 'H1 Order Block',
-    entry: 3980.00,
-    sl: 3972.00,
-    tp: 4004.00,
-    rr: '1:3.0',
-    rMultiple: 3.0,
-    outcome: 'TP Hit',
-    chartUrl: '',
-    notes: 'Asian session consolidation break above pivot.',
-    pnlAmount: 3.0
-  }
+  
 ];
 
 const SETUPS_LIST = [
   'Supply Zone Short',
-  'Demand Zone Bounce',
+  'Anish Live Trade',
   'H1 Order Block',
   'M15 Rejection',
   'Breakout Re-test',
-  'Key Support Hold',
+  'Unknown Setup',
   'Trend Continuation'
 ];
 
